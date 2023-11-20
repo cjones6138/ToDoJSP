@@ -47,9 +47,9 @@ public class Utils {
     public static Connection getConnection() throws Exception{
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-            String url = "jdbc:mysql://localhost:3306/todo_list";
-            String username = "cjones";
-            String password = "password123";
+            String url = "jdbc:mysql://localhost:3306/*";
+            String username = "*";
+            String password = "*";
 
             Connection conn = DriverManager.getConnection(url, username, password);
             return conn;
